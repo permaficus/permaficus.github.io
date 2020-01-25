@@ -1,6 +1,19 @@
+/* Media Queries: Landscaping */
+@media screen and (max-width: 1060px) {
+    #primary { width:67%; }
+    #secondary { width:30%; margin-left:3%;}  
+}
+
+/* Media Queries: Portrait */
+/*@media screen and (max-width: 768px) {
+    #primary { width:100%; }
+    #secondary { width:100%; margin:0; border:none; }
+}*/
+
 html, body
 {
     height: 100%;
+    font-size: 100%;
 }
 
 body
@@ -260,11 +273,6 @@ ul.contact li a:before
 #logo span
 {
     padding: 0em 0em 0em 0.5em;
-}
-
-#logo h1:before
-{
-    
 }
 
 #logo a 

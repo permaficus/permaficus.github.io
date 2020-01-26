@@ -1,6 +1,24 @@
+@media only screen and (max-width:800px) {
+    /* For tablets: */
+    .main {
+      width: 80%;
+      padding: 0;
+    }
+    .right {
+      width: 100%;
+    }
+  }
+  @media only screen and (max-width:500px) {
+    /* For mobile phones: */
+    .menu, .main, .right {
+      width: 100%;
+    }
+  }
+
 html, body
 {
     height: 100%;
+    font-size: 100%;
 }
 
 body
@@ -54,7 +72,7 @@ a:hover
 .container
 {
     width: 1200px;
-    margin: 0px auto;
+    margin: auto;
 }
 
 /*********************************************************************************/
@@ -97,14 +115,6 @@ a:hover
     width: auto;
 }
 
-/*********************************************************************************/
-/* List Styles                                                                   */
-/*********************************************************************************/
-
-ul.style1
-{
-}
-
 
 /*********************************************************************************/
 /* Social Icon Styles                                                            */
@@ -112,7 +122,7 @@ ul.style1
 
 ul.contact
 {
-    overflow:  hidden;
+    overflow:  auto;
     margin: 0em 0 3em 0;
     padding-top: 1em;
     text-align: center;
@@ -145,7 +155,7 @@ ul.contact li a:before
     line-height: 40px;
     text-align: center;
     font-size: 2em;
-    color: rgba(255,255,255,.3);
+    color: rgba(255,255,255,.3);right
 }
 
 /*********************************************************************************/
@@ -157,6 +167,7 @@ ul.contact li a:before
     overflow: hidden;
     margin-bottom: 4em;
     text-align: center;
+    width: 100%
 }
 
 .major h2
@@ -221,10 +232,6 @@ ul.contact li a:before
     font-size: 0.90em;
     color: #FFF;
 }
-
-.button:before
-{
-}
     
 /*********************************************************************************/
 /* Header                                                                        */
@@ -253,18 +260,9 @@ ul.contact li a:before
     font-size: 2.5em;
 }
 
-#logo h1 a
-{
-}
-
 #logo span
 {
     padding: 0em 0em 0em 0.5em;
-}
-
-#logo h1:before
-{
-    
 }
 
 #logo a 
@@ -284,6 +282,7 @@ ul.contact li a:before
     list-style: none;
     line-height: normal;
     text-align: center;
+    overflow:auto;
 }
 
 #menu li
@@ -307,11 +306,14 @@ ul.contact li a:before
 {
     border-radius: 30px;
     border: 1px solid;
-    border-color: rgba(255,255,255,.2);
+    border-color: rgba(255,255,255,255);
 }
 
 #menu a:hover
 {
+    border-radius: 30px;
+    border: 2px solid;
+    border-color: rgb(255, 255, 255);
 }
 
 /*********************************************************************************/
@@ -344,7 +346,7 @@ ul.contact li a:before
 #content
 {
     float: left;
-    width: 588px;
+    width: 60%;
     text-align: center;
 }
 
@@ -372,7 +374,7 @@ ul.contact li a:before
 #sidebar
 {
     float: right;
-    width: 588px;
+    width: 100%;
 }
 
 /*********************************************************************************/
@@ -391,6 +393,7 @@ ul.contact li a:before
 {
     overflow: hidden;
     padding: 5em 0em;
+    width: 20%;
 }
 
 #copyright p
@@ -417,6 +420,7 @@ ul.contact li a:before
     overflow: hidden;
     padding: 5em 0em;
     background: #FFF;
+    width: auto;
 }
 
 #featured h2
@@ -449,14 +453,17 @@ ul.contact li a:before
 {
     float: left;
     margin-right: 24px;
+    position: relative;
 }
 
 .column3
 {
     float: left;
+    /*position: relative;*/
 }
 
 .column4
 {
     float: right;
+    /*position: relative;*/
 }
